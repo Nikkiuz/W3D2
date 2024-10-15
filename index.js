@@ -113,7 +113,7 @@
        const revealFooterLink = function () {
         const footerAlert = document.getElementById('footerAlert')
            footerAlert.addEventListener('click', function(){
-            const link = document.getElementById('link');
+            const link = document.getElementById('link')
             alert(link) 
             }
             )
@@ -127,14 +127,17 @@
      */
  
        const generateTable = function () {
+          
+        }
         
-       }
- 
+
        /* ESERCIZIO 12
         Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
      */
  
-       const addRow = function () {}
+       const addRow = function () {
+
+       }
  
        /* ESERCIZIO 14
        Crea una funzione che nasconda le immagini della tabella quando eseguita
@@ -146,5 +149,7 @@
        Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
      */
  
-       const changeColorWithRandom = function () {}
+       const changeColorWithRandom = function () {
+        
+       }
 
