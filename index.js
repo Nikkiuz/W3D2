@@ -42,6 +42,8 @@
             changedLink.setAttribute('href', 'https://www.google.com')
         }
         
+// soluzione alternativa solo su js -> document.querySelectorAll('a:not(footer a)')
+
        changeUrls()
  
        /* ESERCIZIO 5
@@ -127,9 +129,30 @@
      */
  
        const generateTable = function () {
-          
+          const table = document.createElement('table')
+        //   table.innerHTML = '<tr><th>IMMAGINE</th><th>NOMEPRODOTTO</th></tr>'
+        // //   metodo scomodo ma se uso il backtick la stringa può andare a capo
+        table.innerHTML =`<tr>
+                            <th>IMMAGINE</th>
+                            <th>NOME</th>
+                            <th>PRODOTTO'</th>
+                            <th>QUANTITA'</th>
+                            <th>PREZZO</th>
+                            </tr>
+                            <tr>
+                            <th>------</th>
+                            <th>------</th>
+                            <th>------</th>
+                            <th>------</th>
+                            <th>------</th>
+                            </tr>
+                            `
+   
+          const container = document.getElementById('tableArea')
+          container.appendChild(table)
         }
         
+        generateTable()
 
        /* ESERCIZIO 12
         Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
