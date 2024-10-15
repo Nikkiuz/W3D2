@@ -61,20 +61,30 @@
      */
  
        const addParagraph = function () {
-        
+        const newP = document.createElement('p')
+        newP.innerText = 'nuovo paragrafo'
+        const firstDiv = document.querySelector('div:first-of-type')
+        firstDiv.appendChild(newP)
        }
+       addParagraph()
  
        /* ESERCIZIO 7
         Scrivi una funzione che faccia scomparire la prima lista non ordinata
      */
  
-       const hideFirstUl = function () {}
+       const hideFirstUl = function () {
+        const deletedList = document.getElementById('firstList')
+        deletedList.remove()
+       }
+       hideFirstUl()
  
        /* ESERCIZIO 8 
         Scrivi una funzione che renda verde il background di ogni lista non ordinata
        */
  
-       const paintItGreen = function () {}
+       const paintItGreen = function () {
+        
+       }
  
        /* ESERCIZIO 9
         Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
