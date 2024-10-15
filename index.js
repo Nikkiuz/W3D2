@@ -83,20 +83,37 @@
        */
  
        const paintItGreen = function () {
-        
+        const paintedList = document.getElementsByTagName('ul') 
+        for (let i = 0; i < paintedList.length; i++) {
+            paintedList[i].classList.add('listBackground')
+        }
        }
+       paintItGreen()
  
        /* ESERCIZIO 9
         Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
        */
  
-       const makeItClickable = function () {}
+       const makeItClickable = function () {
+        const title = document.getElementById('title')
+
+        title.addEventListener('click', function(){
+            title.textContent = title.textContent.slice(0, -1)  
+              }
+            )
+        }
+           
+
+       makeItClickable()
  
        /* ESERCIZIO 10
         Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
        */
  
-       const revealFooterLink = function () {}
+       const revealFooterLink = function () {
+        const title = document.getElementById('title')
+
+       }
  
        /* ESERCIZIO 11
         Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
