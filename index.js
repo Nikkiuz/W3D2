@@ -111,16 +111,24 @@
        */
  
        const revealFooterLink = function () {
-        const title = document.getElementById('title')
+        const footerAlert = document.getElementById('footerAlert')
+           footerAlert.addEventListener('click', function(){
+            const link = document.getElementById('link');
+            alert(link) 
+            }
+            )
+         }
 
-       }
+         revealFooterLink()
  
        /* ESERCIZIO 11
         Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
         La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
      */
  
-       const generateTable = function () {}
+       const generateTable = function () {
+        
+       }
  
        /* ESERCIZIO 12
         Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
